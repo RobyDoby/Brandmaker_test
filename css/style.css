@@ -171,10 +171,11 @@ body {
   display: block;
 }
 .header-mobile__content {
-  display: none;
+  transform: translateX(-150%);
+  transition: transform 150ms ease-in-out;
 }
 .header-mobile__content.active {
-  display: block;
+  transform: translateX(0);
 }
 .header-mobile__contacts {
   padding-block: 1.5rem;
@@ -195,6 +196,7 @@ body {
 
 .select.active .select__body {
   display: block;
+  animation: fadeIn 300ms forwards;
 }
 .select.active .select__icon {
   transform: rotate(180deg);
@@ -256,6 +258,7 @@ body {
 }
 .header-mobile-nav__item_expanded.active .submenu-header {
   display: block;
+  animation: fadeIn 300ms forwards;
 }
 .header-mobile-nav__item_expanded.active .header-mobile-nav__icon {
   transform: rotate(180deg);
@@ -277,4 +280,15 @@ body {
 }
 .submenu-header__link:hover, .submenu-header__link:focus {
   color: hsl(198deg, 100%, 45%);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
