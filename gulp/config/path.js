@@ -10,9 +10,9 @@ export const path = {
       js: `${buildFolder}/js/`,
       css: `${buildFolder}/css/`,
       html: `${buildFolder}/`,
-      images: `${buildFolder}/assets/img/`,
-      fonts: `${buildFolder}/assets/fonts/`,
-      files: `${buildFolder}/assets/files/`,
+      images: `${buildFolder}/img/`,
+      fonts: `${buildFolder}/fonts/`,
+      files: `${buildFolder}/files/`,
    },
    src: {
       js: `${srcFolder}/js/app.js`,
