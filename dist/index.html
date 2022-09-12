@@ -4,12 +4,18 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+   />
    <link rel="stylesheet" href="css/style.min.css" />
    <title>Деломедика</title>
 </head>
 
    <body>
-      <header class="header" tabindex="0">
+      <header><section class="header" tabindex="-1">
       <div class="header__container">
          <div class="header__block">
          	<div class="header__top top-header">
@@ -111,37 +117,124 @@
 	         </div>
          </div>
       </div>
-   <!-- <?xml version="1.0" encoding="utf-8"?> -->
-   <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) 
-      <svg
-         version="1.1"
-         id="Layer_2"
-         class="shield-bg"
-         xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         x="0px"
-         y="0px"
-         viewBox="0 0 300 371"
-         style="enable-background: new 0 0 300 371"
-         xml:space="preserve"
-      >
-         <style type="text/css">
-            .st0 {
-               fill: #ffffff;
-            }
-         </style>
-         <path
-            class="st0"
-            d="M151.21,0h-2.42H9.43C4.76,0,0.98,3.78,0.98,8.45l0,254.3c0,0.92,0.06,1.83,0.18,2.74
-	c1.13,8.68,8.26,52.48,44.65,67.46C85.86,349.43,150,371,150,371s64.14-21.57,104.19-38.05c36.39-14.98,43.52-58.78,44.65-67.46
-	c0.12-0.91,0.18-1.82,0.18-2.74V8.45c0-4.67-3.78-8.45-8.45-8.45H151.21z"
-         />
-      </svg> -->
-		<div class="div" style="min-height: 300vh;"></div>
+</section>
+
+ <section class="hero">
+   <div class="hero__container">
+      <div class="hero__content">
+         <div class="hero__main-info">
+            <h1 class="hero__title">
+               Проведение профосмотров <br />
+               от 600 руб./чел. <br />
+               с выездом в вашу организацию
+            </h1>
+            <ul class="hero__features features-list" role="list">
+               <li class="features-list__item">
+                  <span class="features-list__icon _icons-clock"></span>
+                  <span class="features-list__text"
+                     >Сделаем за вас все: от подбора типа профосмотра до выдачи всех
+                     документов</span
+                  >
+               </li>
+               <li class="features-list__item">
+                  <span class="features-list__icon _icons-law"></span>
+                  <span class="features-list__text"
+                     >Работаем строго по 302н Приказу Минздравсоцразвития</span
+                  >
+               </li>
+               <li class="features-list__item">
+                  <span class="features-list__icon _icons-calendar"></span>
+                  <span class="features-list__text">Результаты профосмотра всего за 7 дней</span>
+               </li>
+            </ul>
+            <a href="#" class="hero__cta_desk">Подобрать профосмотр</a>
+            <button class="hero__cta_mobile btn" type="button">
+               Получить коммерческое предложение
+            </button>
+         </div>
+         <div class="hero__bg">
+            <img src="img/girl-hero.png" alt="Девушка врач" />
+         </div>
+         <div class="hero-submission">
+            <svg
+   version="1.1"
+   id="shield"
+   class="svg-shield"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   x="0px"
+   y="0px"
+   viewBox="0 0 370 470"
+   style="enable-background: new 0 0 370 470"
+   xml:space="preserve"
+>
+   <style type="text/css">
+      .st0 {
+         fill: #ffffff;
+      }
+   </style>
+   <path
+      class="st0"
+      d="M365.96,21.42v296.29c0,48.96-30.66,92.68-76.7,109.36L184.5,465L79.75,427.06
+	c-46.04-16.67-76.7-60.39-76.7-109.36V21.42C3.04,11.8,10.84,4,20.46,4h328.08C358.16,4,365.96,11.8,365.96,21.42z"
+   />
+</svg>
+
+            <div class="hero-submission__content">
+               <form class="hero-submission__form">
+                  <p class="hero-submission__text">
+                     Оставьте заявку, и мы предоставим полный план профосмотра с расчетом итоговой
+                     стоимости, подходящий именно вашей организации
+                  </p>
+                  <input
+                     type="text"
+                     class="hero-submission__phone"
+                     name="phone"
+                     id="phone"
+                     placeholder="Ваш номер телефона"
+                  />
+                  <button class="hero-submission__btn btn" type="submit">
+                     Получить коммерческое предложение
+                  </button>
+               </form>
+               <div class="hero-submission__credits">
+                  Передавая информацию сайту, вы принимаете условия <br />
+                  <span
+                     >Политики защиты персональной <br />
+                     информации</span
+                  >
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
 </header>
-
-
       <main></main>
+      <div class="modal" aria-hidden="true">
+   <div class="modal__content">
+      <button class="modal__close _icons-close"></button>
+      <form class="modal__submission-form">
+         <p class="modal__text">
+            Оставьте заявку, и мы предоставим полный план профосмотра с расчетом итоговой стоимости,
+            подходящий именно вашей организации
+         </p>
+         <input
+            type="text"
+            class="modal__phone"
+            name="phone"
+            id="phone"
+            placeholder="Ваш номер телефона"
+         />
+         <button class="modal__btn btn" type="submit">Получить коммерческое предложение</button>
+      </form>
+      <div class="modal__credits">
+         Передавая информацию сайту, вы принимаете условия <br />
+         <span>Политики защиты персональной информации</span>
+      </div>
+   </div>
+</div>
+
       <script src="js/app.min.js" type="module"></script>
    </body>
 </html>
