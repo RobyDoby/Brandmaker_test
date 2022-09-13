@@ -7,10 +7,10 @@
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap&_v=20220913223732"
       rel="stylesheet"
    />
-   <link rel="stylesheet" href="css/style.min.css" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20220913223732" />
    <title>Деломедика</title>
 </head>
 
@@ -20,7 +20,7 @@
          <div class="header__block">
          	<div class="header__top top-header">
 	            <a href="#" class="top-header__logo">
-	               <img src="img/logo.png" alt="Деломедика лого" />
+	               <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Деломедика лого" /></picture>
 	            </a>
 					<div class="top-header__description">Медицинские профосмотры <br> в Москве и области</div>
 					<div class="top-header__contacts">
@@ -36,15 +36,15 @@
 		            <div class="header__select select">
 		               <div class="select__header">
 		                  <div class="select__title">Ваш город: </div>
-		                  <span class="select__city">Королев</span>
+		                  <span class="select__city" tabindex="0">Королев</span>
 		                  <span class="select__icon _icons-arrow-down"></span>
 		               </div>
 		               <ul class="select__body" role="list">
-		                  <li class="select__item">Королев</li>
-		                  <li class="select__item">Москва</li>
-		                  <li class="select__item">Санкт-Петербург</li>
-		                  <li class="select__item">Киров</li>
-		                  <li class="select__item">Казань</li>
+		                  <li class="select__item" tabindex="0">Королев</li>
+		                  <li class="select__item" tabindex="0">Москва</li>
+		                  <li class="select__item" tabindex="0">Санкт-Петербург</li>
+		                  <li class="select__item" tabindex="0">Киров</li>
+		                  <li class="select__item" tabindex="0">Казань</li>
 		               </ul>
 		            </div>
 		         </div>
@@ -53,7 +53,7 @@
 		               <li class="header-nav__item">
 		                  <a href="#" class="header-nav__link">Подбор профосмотра</a>
 		               </li>
-		               <li class="header-nav__item header-nav__item_expanded">
+		               <li class="header-nav__item header-nav__item_expanded" tabindex="0">
 								<div class="header-nav__submenu-title">
 									<span class="header-nav__title">Услуги</span>
 									<span class="header-nav__icon _icons-arrow-down"></span>
@@ -153,7 +153,7 @@
             </button>
          </div>
          <div class="hero__bg">
-            <img src="img/girl-hero.png" alt="Девушка врач" />
+            <picture><source srcset="img/girl-hero.webp" type="image/webp"><img src="img/girl-hero.png" alt="Девушка врач" /></picture>
          </div>
          <div class="hero-submission">
             <svg
@@ -235,6 +235,6 @@
    </div>
 </div>
 
-      <script src="js/app.min.js" type="module"></script>
+      <script src="js/app.min.js?_v=20220913223732" type="module"></script>
    </body>
 </html>
