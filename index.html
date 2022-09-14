@@ -7,10 +7,10 @@
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap&_v=20220913223732"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap&_v=20220915024841"
       rel="stylesheet"
    />
-   <link rel="stylesheet" href="css/style.min.css?_v=20220913223732" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20220915024841" />
    <title>Деломедика</title>
 </head>
 
@@ -126,7 +126,7 @@
             <h1 class="hero__title">
                Проведение профосмотров <br />
                от 600 руб./чел. <br />
-               с выездом в вашу организацию
+               <span>с выездом в вашу организацию</span>
             </h1>
             <ul class="hero__features features-list" role="list">
                <li class="features-list__item">
@@ -210,7 +210,163 @@
    </div>
 </section>
 </header>
-      <main></main>
+      <main><section class="profosmotr">
+   <div class="profosmotr__container">
+      <div class="profosmotr__content">
+         <h2 class="profosmotr__title">Не знаете, какой профосмотр подойдет вашей организации?</h2>
+         <p class="profosmotr__description">
+            Ответьте на 4 вопроса, и мы подберем подходящий профосмотр, рассчитаем стоимость его
+            проведения и вышлем коммерческое предложение
+         </p>
+         <form class="profosmotr__form form-steps">
+            <div class="form-steps__images">
+               <picture><source srcset="img/quiz-1.webp" type="image/webp"><img src="img/quiz-1.jpg" alt="Мужчина в рабочей форме взбирается по лестнице" class="form-steps__image active"/></picture>
+               <picture><source srcset="img/quiz-2.webp" type="image/webp"><img src="img/quiz-2.jpg" alt="Мужчина в форме врача подписывает бумаги" class="form-steps__image"/></picture>
+               <picture><source srcset="img/quiz-3.webp" type="image/webp"><img src="img/quiz-3.jpg" alt="Рабочие предприятия в синей спец одежде" class="form-steps__image"/></picture>
+               <picture><source srcset="img/quiz-4.webp" type="image/webp"><img src="img/quiz-4.jpg" alt="Рабочие предприятия в синей спец одежде" class="form-steps__image"/></picture>
+            </div>
+            <div class="form-steps__steps-list">
+               <!-- Сделать динамическое количество контента -->
+            </div>
+
+            <div class="form-steps__content">
+               <div class="form-steps__step active">
+                  <h3 class="form-steps__title" data-step="1">Чем занимается ваша организация?</h3>
+                  <textarea id="form-step-1" placeholder="Введите ответ" required></textarea>
+               </div>
+               <div class="form-steps__step">
+                  <h3 class="form-steps__title" data-step="2">
+                     Укажите вид необходимой услуги (Можно выбрать несколько вариантов)
+                  </h3>
+                  <div class="form-steps__input-container">
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Предварительный/периодический медицинский осмотр</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Выездной медицинский осмотр (профосмотр)</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text">Личные медицинские книжки (ЛМК)</span>
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Психиатрическое освидетельствование</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Предрейсовые/послерейсовые профосмотры</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Предсменные/послесменные профосмотры</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Организация здравпункта на предприятии</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text">Диспансеризация</span>
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text">Вакцинация</span>
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Помощь в организации аттестации рабочих мест (СОУТ)</span
+                        >
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text">Тендерный отдел</span>
+                     </label>
+                     <label class="form-steps__label">
+                        <input type="checkbox" name="service" />
+                        <span class="form-steps__label-text"
+                           >Я не знаю, нужна помощь в подборе</span
+                        >
+                     </label>
+                  </div>
+               </div>
+               <div class="form-steps__step">
+                  <h3 class="form-steps__title" data-step="3">
+                     Укажите количество сотрудников, которым нужно провести профосмотр.
+                  </h3>
+                  <textarea id="form-step-3" placeholder="Введите число" required></textarea>
+               </div>
+               <div class="form-steps__step">
+                  <h3 class="form-steps__title" data-step="4">
+                     Вы планируете пройти профосмотр в одном из наших медцентров или требуется
+                     выездная бригада?
+                  </h3>
+                  <div class="form-steps__passage-container">
+                     <div class="form-steps__passage-content">
+								<input type="radio" name="passage-option" id="passage-option-1" />
+	                     <label for="passage-option-1">В медцентре</label>
+                     </div>
+                     <div class="form-steps__passage-content">
+                     	<input type="radio" name="passage-option" id="passage-option-2" />
+	                     <label for="passage-option-2">Требуется выездная бригада</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="form-steps__actions">
+               <button class="form-steps__prev-btn" type="button">
+                  <span
+                     class="form-steps__btn-icon form-steps__btn-icon_prev _icons-arrow-right"
+                  ></span>
+                  <span class="form-steps__btn-text">Назад</span>
+               </button>
+               <button class="btn form-steps__btn" type="button">
+                  <span class="form-steps__btn-text">Далее</span>
+                  <span class="form-steps__btn-icon _icons-arrow-right"></span>
+               </button>
+            </div>
+            <div class="form-steps__cta cta-steps">
+               <h3 class="cta-steps__title">
+                  Введите номер телефона и мы вышлем вам расчет стоимости профосмотра и коммерческое
+                  предложение
+               </h3>
+               <div class="cta-steps__content">
+               	<input
+	                  type="text"
+	                  class="cta-steps__phone"
+	                  name="cta-steps__phone"
+	                  id="cta-steps__phone"
+	                  placeholder="Ваш номер телефона"
+	               />
+	               <button class="cta-steps__btn btn" type="submit">
+	                  Получить коммерческое предложение
+	               </button>
+	               <div class="cta-steps__credits">
+	                  Передавая информацию сайту, вы принимаете условия <br />
+	                  <span>Политики защиты персональной информации</span>
+	               </div>
+               </divc>
+            </div>
+         </form>
+      </div>
+   </div>
+</section>
+</main>
       <div class="modal" aria-hidden="true">
    <div class="modal__content">
       <button class="modal__close _icons-close"></button>
@@ -235,6 +391,6 @@
    </div>
 </div>
 
-      <script src="js/app.min.js?_v=20220913223732" type="module"></script>
+      <script src="js/app.min.js?_v=20220915024841" type="module"></script>
    </body>
 </html>
