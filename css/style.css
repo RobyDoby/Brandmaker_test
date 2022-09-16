@@ -720,15 +720,18 @@ input {
   grid-row: 1/-1;
   grid-column: 1/-1;
   display: none;
+  border-radius: 0.3125rem;
+}
+
+.form-steps__images > * img {
   height: 100%;
   width: 100%;
-  border-radius: 0.3125rem;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.form-steps__images > *.active {
+.form-steps__images > * img.active {
   -webkit-animation: slide 500ms forwards;
           animation: slide 500ms forwards;
 }
