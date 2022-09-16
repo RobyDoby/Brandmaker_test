@@ -998,7 +998,8 @@ input {
 
 .form-steps__steps-list,
 .form-steps__content,
-.form-steps__actions {
+.form-steps__actions,
+.form-steps .cta-steps {
   margin-inline: 0.625rem;
 }
 
@@ -1095,8 +1096,7 @@ input {
 @media screen and (min-width: 28rem) {
   .form-steps__steps-list,
   .form-steps__content,
-  .form-steps__actions,
-  .cta-steps {
+  .form-steps__actions {
     margin-inline: 2.8125rem;
   }
 
