@@ -700,6 +700,7 @@ input {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "image image" "steps steps" "content content" "actions actions";
+  overflow: hidden;
 }
 
 .form-steps.form-opened {
