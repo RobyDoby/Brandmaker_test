@@ -135,10 +135,10 @@ body {
   font-family: "GothamPro", sans-serif;
   font-size: 0.875rem;
   color: hsl(260deg, 6%, 10%);
-  overflow: hidden;
 }
 
 body.locked {
+  overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
   -ms-scroll-chaining: none;
