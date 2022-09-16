@@ -995,6 +995,12 @@ input {
   font-size: 1.25rem;
 }
 
+.form-steps__steps-list,
+.form-steps__content,
+.form-steps__actions {
+  margin-inline: 0.625rem;
+}
+
 .cta-steps {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
