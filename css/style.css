@@ -723,17 +723,17 @@ input {
   border-radius: 0.3125rem;
 }
 
+.form-steps__images > *.active {
+  -webkit-animation: slide 500ms forwards;
+          animation: slide 500ms forwards;
+}
+
 .form-steps__images > * img {
   height: 100%;
   width: 100%;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.form-steps__images > * img.active {
-  -webkit-animation: slide 500ms forwards;
-          animation: slide 500ms forwards;
 }
 
 .form-steps__steps-list {
